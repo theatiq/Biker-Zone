@@ -4,40 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biker Zone</title>
-    <!-- Google font CDN -->
+    <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- DaisyUI and Tailwindcss CDN -->
+    <!-- DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       .font-poppins {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
       }
     </style>
-    <!-- Tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
-              "bike-primary": "#E76F51",
-              "bike-primary-bg": "rgba(231, 111, 81, 0.1)",
+              clifford: '#da373d',
+              'bike-primary': '#E76F51',
+              'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
             },
           },
         },
-      };
+      }
     </script>
   </head>
   <body class="font-poppins">
@@ -88,12 +86,13 @@
           </div>
         </div>
       </nav>
+
       <!-- Slider/Carousel -->
-      <div class="carousel w-full h-[550px] bg-bike-primary-bg">
-        <!-- Slide-1 -->
+      <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+        <!-- Slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
-            <!-- Text content -->
+            <!-- text content -->
             <div class="space-y-7 flex-1">
               <h2 class="text-6xl font-bold">
                 Ride-on R15 V4 <br />
@@ -105,9 +104,9 @@
               </p>
               <button class="btn bg-bike-primary text-white">Purchase</button>
             </div>
-            <!-- Image content -->
+            <!-- image content -->
             <div class="flex-1">
-              <img src="images/slider/bike1.png" class="w-[400px]" />
+              <img src="./images/slider/bike1.png" class="w-[400px]" />
             </div>
           </div>
           <div
@@ -117,10 +116,10 @@
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <!-- Slide-2 -->
+        <!-- Slide 2 -->
         <div id="slide2" class="carousel-item relative w-full">
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
-            <!-- Text content -->
+            <!-- text content -->
             <div class="space-y-7 flex-1">
               <h2 class="text-6xl font-bold">
                 Ride-on R15 V4 <br />
@@ -132,9 +131,9 @@
               </p>
               <button class="btn bg-bike-primary text-white">Purchase</button>
             </div>
-            <!-- Image content -->
+            <!-- image content -->
             <div class="flex-1">
-              <img src="images/slider/bike2.png" class="w-[400px]" />
+              <img src="./images/slider/bike2.png" class="w-[400px]" />
             </div>
           </div>
           <div
@@ -144,10 +143,10 @@
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <!-- Slide-3 -->
+        <!-- Slide 3 -->
         <div id="slide3" class="carousel-item relative w-full">
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
-            <!-- Text content -->
+            <!-- text content -->
             <div class="space-y-7 flex-1">
               <h2 class="text-6xl font-bold">
                 Ride-on R15 V4 <br />
@@ -159,9 +158,9 @@
               </p>
               <button class="btn bg-bike-primary text-white">Purchase</button>
             </div>
-            <!-- Image content -->
+            <!-- image content -->
             <div class="flex-1">
-              <img src="images/slider/bike3.png" class="w-[400px]" />
+              <img src="./images/slider/bike3.png" class="w-[400px]" />
             </div>
           </div>
           <div
@@ -176,17 +175,18 @@
 
     <!-- Main Section -->
     <main class="md:container mx-auto">
-      <!-- Featured Bike Section -->
+      <!-- featured bike section - Homework -->
       <section></section>
-      <!-- Latest Bike Collection -->
+
+      <!-- Latest Bike Section -->
       <section class="my-24">
         <h3 class="text-5xl font-bold text-center mb-12">Latest Bikes</h3>
-        <!-- Cards -->
+        <!-- cards -->
         <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card-1 -->
+          <!-- card 1 -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="images/others/latest1.png" alt="Bike1" />
+              <img src="./images/others/latest1.png" alt="Shoes" />
             </figure>
             <div class="card-body space-y-5">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
@@ -201,10 +201,10 @@
               </div>
             </div>
           </div>
-          <!-- Card-2 -->
+          <!-- card 2 -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="images/others/latest2.png" alt="Bike1" />
+              <img src="./images/others/latest2.png" alt="Shoes" />
             </figure>
             <div class="card-body space-y-5">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
@@ -219,10 +219,10 @@
               </div>
             </div>
           </div>
-          <!-- Card-3 -->
+          <!-- card 3 -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="images/others/latest3.png" alt="Bike1" />
+              <img src="./images/others/latest3.png" alt="Shoes" />
             </figure>
             <div class="card-body space-y-5">
               <h2 class="card-title">Ducati XDIAVEL S-73</h2>
@@ -239,8 +239,10 @@
           </div>
         </div>
       </section>
-      <!-- Happy Clients section -->
+
+      <!-- Happy Clients Happy Homework -->
       <section></section>
+
       <!-- FAQ Section -->
       <section class="my-24">
         <h3 class="text-5xl font-bold text-center mb-12">
@@ -249,62 +251,71 @@
         <div class="hero">
           <div class="hero-content flex-col lg:flex-row">
             <img
-              src="images/others/faq.png"
+              src="./images/others/faq.png"
               class="w-full rounded-lg shadow-2xl"
             />
             <div class="space-y-5">
-              <div class="collapse collapse-arrow border border-blue-300">
+              <div class="collapse collapse-arrow border border-blue-100">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
+                  What are the most important things I should know about riding
+                  a bike?
                 </div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
                 </div>
               </div>
-              <div class="collapse collapse-arrow border border-blue-300">
+              <div class="collapse collapse-arrow border border-blue-100">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
+                  What are the most important things I should know about.
                 </div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
                 </div>
               </div>
-              <div class="collapse collapse-arrow border border-blue-300">
+              <div class="collapse collapse-arrow border border-blue-100">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
+                  help you be a more focused and legally compliant bike rider.
                 </div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>
+                    This will help you be a more focused and legally compliant
+                    bike rider.
+                  </p>
                 </div>
               </div>
-              <div class="collapse collapse-arrow border border-blue-300">
+              <div class="collapse collapse-arrow border border-blue-100">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
+                  help you be a more focused and legally compliant bike rider.
                 </div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>
+                    This will help you be a more focused and legally compliant
+                    bike rider.
+                  </p>
                 </div>
               </div>
-              <div class="collapse collapse-arrow border border-blue-300">
+              <div class="collapse collapse-arrow border border-blue-100">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
+                  help you be a more focused and legally compliant bike rider.
                 </div>
                 <div class="collapse-content">
-                  <p>hello</p>
-                </div>
-              </div>
-              <div class="collapse collapse-arrow border border-blue-300">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div class="collapse-content">
-                  <p>hello</p>
+                  <p>
+                    This will help you be a more focused and legally compliant
+                    bike rider.
+                  </p>
                 </div>
               </div>
             </div>
@@ -314,7 +325,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer bg-neutral text-neutral-content p-10">
+    <footer class="footer bg-black text-neutral-content p-10">
       <aside>
         <p>
           ACME Industries Ltd.
@@ -323,15 +334,10 @@
         </p>
       </aside>
       <nav>
-        <h6 class="footer-title">Get the app</h6>
-        <div class="grid grid-col-1 gap-4">
-          <a>
-            <img class="w-32" src="images/others/android.png" alt="" />
-          </a>
-
-          <a>
-            <img class="w-32" src="images/others/ios.png" alt="" />
-          </a>
+        <h6 class="footer-title">Get The App</h6>
+        <div class="grid grid-cols-1 gap-4">
+          <a><img class="w-36" src="./images/others/android.png" alt="" /></a>
+          <a> <img class="w-36" src="./images/others/ios.png" alt="" /> </a>
         </div>
       </nav>
     </footer>
